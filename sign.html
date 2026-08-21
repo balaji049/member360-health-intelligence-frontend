@@ -1544,12 +1544,8 @@
 
     // Destination navigation helper to welcome page
     function navigateToWelcomePage() {
-      if (window.location.pathname.endsWith('.html') || window.location.protocol === 'file:') {
-        window.location.href = 'welcome.html';
-      } else {
-        window.location.href = '/welcome';
-      }
-    }
+  window.location.href = '/welcome';
+}
   </script>
 
   <div class="register-modal" id="registerModal" aria-modal="true" role="dialog">
