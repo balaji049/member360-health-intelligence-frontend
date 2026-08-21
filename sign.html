@@ -1423,10 +1423,6 @@
 
       closeRegisterModal();
       const destination = role === 'Admin' ? '/dashboard' : `/members/${encodeURIComponent(username.toUpperCase())}`;
-      if (window.location.pathname.endsWith('.html') || window.location.protocol === 'file:') {
-        window.location.href = role === 'Admin' ? 'welcome.html' : `welcome.html#member-${username.toUpperCase()}`;
-        return;
-      }
       window.location.href = destination;
     }
 
